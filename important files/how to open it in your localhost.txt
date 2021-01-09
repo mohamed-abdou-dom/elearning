@@ -1,0 +1,22 @@
+* in the first we need to download and setup 3 important programs :
+
+1 - xampp server "https://www.apachefriends.org/index.html"
+2 - composer "https://getcomposer.org/"
+3 - node.js ""https://nodejs.org/en/
+
+* after download the project folder and setup the previous programs we need to run this commands
+
+1 - open the cmd and go to inside the project folder
+2 - run command "composer install"
+3 - run command "npm install"
+4 - run command "copy .env.example .env"
+5 - run command "php artisan key:generate"
+6 - open xampp server and click the first two start buttons
+6 - open the browser and open this link "http://localhost/phpmyadmin/"
+7 - in the left side click on the new
+8 - at the field of database name write "weconnected" then click on create button
+9 - open the .env file in the project folder ,then update "DB_DATABASE =  weconnected"
+10 - go back to the cmd and run command "php artisan migrate"
+11 - run command "php artisan db:seed"
+12 - run command "php artisan serve"
+13 - then open browser and open the project link "localhost:8000"
